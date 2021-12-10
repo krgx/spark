@@ -1,0 +1,89 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="36sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extrabold"
+            android:text="@string/login"
+            android:textAlignment="center"
+            android:textColor="@color/regular"
+            android:layout_marginTop="30sp"
+            android:textSize="28sp" />
+
+        <me.zhanghai.android.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="29sp"
+            android:fontFamily="@font/montserrat_light"
+            android:hint="Почта"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textColor="@color/text"
+            android:textColorHint="@color/text"
+            android:textSize="18sp"
+            tools:ignore="TextContrastCheck" />
+
+        <me.zhanghai.android.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_light"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:text=""
+            android:textColor="@color/text"
+            android:textColorHint="@color/text"
+
+
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="311dp"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="270sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_first_button"
+            android:fontFamily="@font/montserrat_bold"
+
+            android:text="@string/vhod"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+
+            android:id="@+id/buttonFalse"
+            android:layout_width="311dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="10sp"
+            android:background="@drawable/bg_second_button"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/nohaveacc"
+            android:textAllCaps="false"
+            android:textColor="@color/main"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonConfirm" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
